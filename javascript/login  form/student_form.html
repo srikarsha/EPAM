@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Student Registration Form</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form name="studentForm" onsubmit="return validateForm()">
+        <label>Student Name: <input type="text" name="username"></label>
+        <label>Registration Number: <input type="text" name="regno"></label>
+        <label>Mobile Number: <input type="text" name="mobile"></label>
+        <label>Email ID: <input type="email" name="email"></label>
+        <label>Password: <input type="password" name="password"></label>
+        <label>Date of Birth: <input type="date" name="dob"></label>
+        <label>Passport Photo: <input type="file" name="photo" accept="image/*"></label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

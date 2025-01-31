@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Slip</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Employee Salary Slip</h1>
+
+        <div class="salary-slip">
+            <div class="employee-details">
+                <p><strong>Employee ID:</strong> <span id="display-empId"></span></p>
+                <p><strong>Employee Name:</strong> <span id="display-empName"></span></p>
+                <p><strong>Designation:</strong> <span id="display-designation"></span></p>
+                <p><strong>Designation:</strong> <span id="display-designation"></span></p>
+                <p><strong>Date of Joining:</strong> <span id="display-joinDate"></span></p>
+                <p><strong>UAN Number:</strong> <span id="display-uanNo"></span></p>
+                <p><strong>PF Number:</strong> <span id="display-pfNo"></span></p>
+                <p><strong>ESI Number:</strong> <span id="display-esiNo"></span></p>
+                <p><strong>Bank Name:</strong> <span id="display-bank"></span></p>
+                <p><strong>Account Number:</strong> <span id="display-accountNo"></span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+           
+            const employeeData = JSON.parse(localStorage.getItem('employeeData'));
+            
+            // Display the data
+            if (employeeData) {
+                document.getElementById('display-empId').textContent = employeeData.empId;
+                document.getElementById('display-empName').textContent = employeeData.empName;
+                document.getElementById('display-designation').textContent = employeeData.designation;
+                document.getElementById('display-designation').textContent = employeeData.designation;
+                document.getElementById('display-joinDate').textContent = employeeData.joinDate;
+                document.getElementById('display-uanNo').textContent = employeeData.uanNo;
+                document.getElementById('display-pfNo').textContent = employeeData.pfNo;
+                document.getElementById('display-esiNo').textContent = employeeData.esiNo;
+                document.getElementById('display-bank').textContent = employeeData.bank;
+                document.getElementById('display-accountNo').textContent = employeeData.accountNo;
+            }
+            
+            // Clear the localStorage after displaying
+            localStorage.removeItem('employeeData');
+        });
+    </script>
+</body>
+</html>

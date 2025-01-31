@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Console Demo</title>
+    </head>
+    <body>
+        <h1>🤡 Console Debugging in VS Code</h1>
+        <script>
+            function Example(firstName,lastName)
+            {
+                this.firstName=firstName;
+                this.lastName=lastName;
+            }
+            Example.prototype.fullName=function fullName() 
+            {
+                return this.firstName+" "+this.lastName;
+            };
+            var Example1=new Example("GOPAL","KRISHNA");
+            var Example2=new Example("RADHA","KRISHNA");
+            document.write(Example1.fullName()+"<br>");
+            document.write(Example2.fullName()+"<br>");
+        </script>
+    </body>
+</html>

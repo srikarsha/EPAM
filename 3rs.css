@@ -1,0 +1,26 @@
+input {
+    padding: 8px;
+    font-size: 14px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+.tick::before {
+    content: "✔ ";
+    color: green;
+}
+
+.cross::before {
+    content: "✘ ";
+    color: red;
+}

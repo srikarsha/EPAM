@@ -1,0 +1,13 @@
+
+body {
+    background-color:brown;
+    background-image:url("./Joel and Ellie.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.center {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+}
